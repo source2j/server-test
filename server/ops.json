@@ -2,6 +2,7 @@
     {
         "uuid": "93a810ae-9a46-3141-a49b-64b3e93cb441",
         "name": "Chapped",
-        "level": 4
+        "level": 4,
+        "bypassesPlayerLimit": false
     }
 ]
