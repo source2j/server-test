@@ -57,3 +57,26 @@
 [00:16:13] [Netty Worker IO Thread #1/INFO]: [/[0:0:0:0:0:0:0:1%0]:41006|Chapped] -> UpstreamBridge has disconnected
 [00:16:13] [Netty Worker IO Thread #1/INFO]: [Chapped] disconnected with: Proxy lost connection to server.
 [00:16:13] [Netty Worker IO Thread #1/INFO]: [/[0:0:0:0:0:0:0:1%0]:41006|Chapped] <-> DownstreamBridge <-> [lobby] has disconnected
+[00:20:25] [main/INFO]: Command not found
+[00:20:27] [main/INFO]: Command not found
+[00:20:33] [main/ERROR]: Exception in thread "main" java.io.IOError: java.io.IOException: Input/output error
+[00:20:33] [main/ERROR]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+[00:20:33] [main/ERROR]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+[00:20:33] [main/ERROR]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+[00:20:33] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+[00:20:33] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+[00:20:33] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+[00:20:33] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468)
+[00:20:33] [main/ERROR]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158)
+[00:20:33] [main/ERROR]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141)
+[00:20:33] [main/ERROR]: 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:73)
+[00:20:33] [main/ERROR]: 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+[00:20:33] [main/ERROR]: Caused by: java.io.IOException: Input/output error
+[00:20:33] [main/ERROR]: 	at java.base/java.io.FileInputStream.read0(Native Method)
+[00:20:33] [main/ERROR]: 	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+[00:20:33] [main/ERROR]: 	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+[00:20:33] [main/ERROR]: 	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+[00:20:33] [main/ERROR]: 	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+[00:20:33] [main/ERROR]: 	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+[00:20:33] [main/ERROR]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160)
+[00:20:33] [main/ERROR]: 	... 10 more
